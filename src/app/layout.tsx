@@ -23,11 +23,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="kr">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header>
+          <nav className="flex">
+            <a href="/" className="p-2 rounded hover:bg-gray-100">
+            메인
+            </a>
+            <a href="/posts" className="p-2 rounded hover:bg-gray-100">
+            글 목록
+            </a>
+          </nav>
+        </header>
+        <main>{children}</main>
+        <footer>
+          <p>푸터</p>
+        </footer>
       </body>
     </html>
   );
