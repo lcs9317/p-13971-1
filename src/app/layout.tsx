@@ -40,8 +40,8 @@ export default function RootLayout({
             </Link>
           </nav>
         </header>
-        <main className="border-2 border-green-500">{children}</main>
-        <footer className="border-2 border-yellow-500">
+        <main className="flex-1 flex flex-col">{children}</main>
+        <footer className="text-center p-2">
           <p>푸터</p>
         </footer>
       </body>
